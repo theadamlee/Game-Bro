@@ -413,7 +413,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.04068145}
-  m_Size: {x: 0.50549835, y: 0.87795514}
+  m_Size: {x: 0.36051342, y: 0.87795514}
   m_Direction: 0
 --- !u!212 &1011162609
 SpriteRenderer:
@@ -494,8 +494,8 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 4
+  m_AngularDrag: 0.4
+  m_GravityScale: 6
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -514,13 +514,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpForce: 7
+  jumpForce: 20
   groundCheck: {fileID: 213320977}
   groundCheckRadius: 0.11
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
-  jumpSpeed: 1.9
 --- !u!1 &1209292518
 GameObject:
   m_ObjectHideFlags: 0

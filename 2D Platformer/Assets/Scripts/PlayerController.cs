@@ -23,8 +23,6 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
 
     private bool canJump;
-
-    public float jumpSpeed;
       
 
     void Start()
@@ -57,7 +55,7 @@ public class PlayerController : MonoBehaviour
 
     private void CheckIfCanJump()
     {
-        if (isGrounded && rb.velocity.y <= 0)
+        if (isGrounded)
         {
             canJump = true;
         }
@@ -71,7 +69,7 @@ public class PlayerController : MonoBehaviour
     {
         if(canJump)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce*jumpSpeed);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
        
         
