@@ -1,7 +1,85 @@
 fileFormatVersion: 2
 guid: 328053dd06518f1429b893e41728ffb1
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -21380841210414938
+    second: IdleStomp-Sheet_0
+  - first:
+      213: 6447887592497643274
+    second: IdleStomp-Sheet_1
+  - first:
+      213: 268648505850457452
+    second: IdleStomp-Sheet_2
+  - first:
+      213: 595551555117074839
+    second: IdleStomp-Sheet_3
+  - first:
+      213: -7286611697734219594
+    second: IdleStomp-Sheet_4
+  - first:
+      213: -153808048013100550
+    second: IdleStomp-Sheet_5
+  - first:
+      213: 3955263090691763585
+    second: IdleStomp-Sheet_6
+  - first:
+      213: -8121962977978469881
+    second: IdleStomp-Sheet_7
+  - first:
+      213: 1451040793487793768
+    second: IdleStomp-Sheet_8
+  - first:
+      213: -3521604533722593030
+    second: IdleStomp-Sheet_9
+  - first:
+      213: 5694164534604210290
+    second: IdleStomp-Sheet_10
+  - first:
+      213: -513146003451518378
+    second: IdleStomp-Sheet_11
+  - first:
+      213: -8931388923227914513
+    second: IdleStomp-Sheet_12
+  - first:
+      213: -8962928235701566972
+    second: IdleStomp-Sheet_13
+  - first:
+      213: -5604466858656584316
+    second: IdleStomp-Sheet_14
+  - first:
+      213: 5932964301464143888
+    second: IdleStomp-Sheet_15
+  - first:
+      213: 8989596171510941951
+    second: IdleStomp-Sheet_16
+  - first:
+      213: -387255465124288572
+    second: IdleStomp-Sheet_17
+  - first:
+      213: 2755005380214625077
+    second: IdleStomp-Sheet_18
+  - first:
+      213: -5618898060613613412
+    second: IdleStomp-Sheet_19
+  - first:
+      213: -6482279126714187118
+    second: IdleStomp-Sheet_20
+  - first:
+      213: -5610660251570703440
+    second: IdleStomp-Sheet_21
+  - first:
+      213: 4690265928826991815
+    second: IdleStomp-Sheet_22
+  - first:
+      213: 4269224283445549416
+    second: IdleStomp-Sheet_23
+  - first:
+      213: 7015230312484459517
+    second: IdleStomp-Sheet_24
+  - first:
+      213: -6465347225665556644
+    second: IdleStomp-Sheet_25
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +109,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +118,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,7 +141,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -72,7 +162,553 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a877aafc3a04bff0800000000000000
+      internalID: -21380841210414938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 2
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f787e5a9f7b7950800000000000000
+      internalID: 6447887592497643274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 2
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6de7a8846e6ab300800000000000000
+      internalID: 268648505850457452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 2
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7994f28ebf2d34800800000000000000
+      internalID: 595551555117074839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 2
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8885c5441c0ea90800000000000000
+      internalID: -7286611697734219594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 2
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9359e25609dddf0800000000000000
+      internalID: -153808048013100550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 2
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d65e933dae3e630800000000000000
+      internalID: 3955263090691763585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 2
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70238ba14bdf84f80800000000000000
+      internalID: -8121962977978469881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 2
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ed07ae9e1232410800000000000000
+      internalID: 1451040793487793768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 2
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af84f08b55fb02fc0800000000000000
+      internalID: -3521604533722593030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 2
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27026b9a97cb50f40800000000000000
+      internalID: 5694164534604210290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 2
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6526c5abd60f0e8f0800000000000000
+      internalID: -513146003451518378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee342848155d0480800000000000000
+      internalID: -8931388923227914513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 2
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40280bbd1484d9380800000000000000
+      internalID: -8962928235701566972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 2
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d2356f51fe832b0800000000000000
+      internalID: -5604466858656584316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 2
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01808d5199f165250800000000000000
+      internalID: 5932964301464143888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 2
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff80f1dc61671cc70800000000000000
+      internalID: 8989596171510941951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 2
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c720fbc43130aaf0800000000000000
+      internalID: -387255465124288572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 2
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5339bf1fbcebb3620800000000000000
+      internalID: 2755005380214625077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 2
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c988efbebf9a502b0800000000000000
+      internalID: -5618898060613613412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 2
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29285459a715a06a0800000000000000
+      internalID: -6482279126714187118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 2
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b379bd4a3ee222b0800000000000000
+      internalID: -5610660251570703440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 2
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4b9dd130c271140800000000000000
+      internalID: 4690265928826991815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 2
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8695e31ddd45f3b30800000000000000
+      internalID: 4269224283445549416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 2
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df350390dca1b5160800000000000000
+      internalID: 7015230312484459517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleStomp-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 2
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fa5a004f87646a0800000000000000
+      internalID: -6465347225665556644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
