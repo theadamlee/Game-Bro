@@ -11,28 +11,41 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
 
     private float movementInputDirection;
-    public float moveSpeed;
+    public float moveSpeed;  
     public float groundCheckRadius;
     public float jumpForce;
     public float wallCheckDistance;
+    public float wallSlideSpeed;
+    public float movementForceInAir;
+    public float airDragMultiplier = 0.95f;
+    public float variableJumpHeightMultiplier = 0.5f;
+    public float wallHopForce;
+    public float wallJumpForce;
 
     public int amountOfJumps;
     private int amountOfJumpsLeft;
+    private int facingDirection = 1; 
 
     private bool isGrounded;
     private bool canJump;
     private bool isWalking;
     private bool isFacingRight = true;
+    private bool isWallSliding;
     private bool isTouchingWall;
 
+    public Vector2 wallHopDirection;
+    public Vector2 wallJumpirection;
+
     public LayerMask whatIsGround;
-  
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         amountOfJumpsLeft = amountOfJumps;
+        wallHopDirection.Normalize();
+        wallJumpirection.Normalize();
     }
 
     // Update is called once per frame
@@ -41,6 +54,7 @@ public class PlayerController : MonoBehaviour
         checkInput();
         CheckIfCanJump();
         CheckMovementDirection();
+        CheckIfWallSliding();
     }
 
     private void FixedUpdate()
@@ -50,13 +64,32 @@ public class PlayerController : MonoBehaviour
         UpdateAnimations();
     }
 
+    private void CheckIfWallSliding()
+    {
+        
+        if (isTouchingWall && !isGrounded && rb.velocity.y <= 0)
+        {
+            isWallSliding = true;
+        }
+        else
+        {
+            isWallSliding = false;
+        }
+
+    }
+
     private void checkInput()
     {
         movementInputDirection = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetKey("w") || Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
             Jump();
+        }
+
+        if (Input.GetButtonUp("Jump"))
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * variableJumpHeightMultiplier);
         }
     }
 
@@ -84,12 +117,45 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             amountOfJumpsLeft--;
         }
+        else if (isWallSliding && movementInputDirection == 0 && canJump) // Wall Hop
+        {
+            isWallSliding = false;
+            amountOfJumpsLeft--;
+            Vector2 forceToAdd;
+        }
              
     }
 
     private void applyMovement()
     {
-        rb.velocity = new Vector2(moveSpeed * movementInputDirection, rb.velocity.y);
+
+        if(isGrounded)
+        {
+            rb.velocity = new Vector2(moveSpeed * movementInputDirection, rb.velocity.y);
+        }
+        else if (!isGrounded && !isWallSliding && movementInputDirection != 0)
+        {
+            Vector2 forceToAdd = new Vector2(movementForceInAir * movementInputDirection, 0);
+            rb.AddForce(forceToAdd);
+
+            if(Mathf.Abs(rb.velocity.x) > moveSpeed)
+            {
+                rb.velocity = new Vector2(moveSpeed * movementInputDirection, rb.velocity.y);
+            }
+            else if (!isGrounded && !isWallSliding && movementInputDirection == 0)
+            {
+                rb.velocity = new Vector2(rb.velocity.x * airDragMultiplier, rb.velocity.y);
+            }
+        }
+        
+        
+        if (isWallSliding)
+        {
+            if(rb.velocity.y < -wallSlideSpeed)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, -wallSlideSpeed);
+            }
+        }
     }
 
     private void CheckSurroundings()
@@ -127,8 +193,12 @@ public class PlayerController : MonoBehaviour
 
     private void Flip()
     {
-        isFacingRight = !isFacingRight;
-        transform.Rotate(0.0f, 180.0f, 0f);
+        if (!isWallSliding)
+        {
+            facingDirection *= -1;
+            isFacingRight = !isFacingRight;
+            transform.Rotate(0.0f, 180.0f, 0f);
+        }  
     }
 
     private void OnDrawGizmos()
