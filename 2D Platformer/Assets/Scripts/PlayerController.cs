@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
     private bool isTouchingWall;
 
     public Vector2 wallHopDirection;
-    public Vector2 wallJumpirection;
+    public Vector2 wallJumpDirection;
 
     public LayerMask whatIsGround;
 
@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         amountOfJumpsLeft = amountOfJumps;
         wallHopDirection.Normalize();
-        wallJumpirection.Normalize();
+        wallJumpDirection.Normalize();
     }
 
     // Update is called once per frame
@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour
 
     private void CheckIfCanJump()
     {
-        if (isGrounded && rb.velocity.y <= 0.01)
+        if ((isGrounded && rb.velocity.y <= 0.01) || isWallSliding)
         {
             amountOfJumpsLeft = amountOfJumps;
         }
@@ -112,7 +112,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        if(canJump)
+        if(canJump && !isWallSliding)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             amountOfJumpsLeft--;
@@ -121,7 +121,15 @@ public class PlayerController : MonoBehaviour
         {
             isWallSliding = false;
             amountOfJumpsLeft--;
-            Vector2 forceToAdd;
+            Vector2 forceToAdd = new Vector2 (wallHopForce * wallHopDirection.x * -facingDirection, wallHopForce * wallHopDirection.y);
+            rb.AddForce(forceToAdd, ForceMode2D.Impulse);
+        }
+        else if((isWalking || isTouchingWall) && movementInputDirection != 0 && canJump)
+        {
+            isWallSliding = false;
+            amountOfJumpsLeft--;
+            Vector2 forceToAdd = new Vector2(wallHopForce * wallJumpDirection.x * movementInputDirection, wallJumpForce * wallJumpDirection.y);
+            rb.AddForce(forceToAdd, ForceMode2D.Impulse);
         }
              
     }
@@ -133,6 +141,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(moveSpeed * movementInputDirection, rb.velocity.y);
         }
+        
         else if (!isGrounded && !isWallSliding && movementInputDirection != 0)
         {
             Vector2 forceToAdd = new Vector2(movementForceInAir * movementInputDirection, 0);
