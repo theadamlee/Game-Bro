@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public float wallCheckDistance;
 
+    public int amountOfJumps;
+    private int amountOfJumpsLeft;
+
     private bool isGrounded;
     private bool canJump;
     private bool isWalking;
@@ -29,6 +32,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        amountOfJumpsLeft = amountOfJumps;
     }
 
     // Update is called once per frame
@@ -60,11 +64,16 @@ public class PlayerController : MonoBehaviour
     {
         if (isGrounded && rb.velocity.y <= 0.01)
         {
-            canJump = true;
+            amountOfJumpsLeft = amountOfJumps;
+        }
+        
+        if(amountOfJumpsLeft <= 0)
+        {
+            canJump = false;
         }
         else
         {
-            canJump = false;
+            canJump = true;
         }
     }
 
@@ -73,6 +82,7 @@ public class PlayerController : MonoBehaviour
         if(canJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            amountOfJumpsLeft--;
         }
              
     }

@@ -414,7 +414,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.031192064}
-  m_Size: {x: 0.36051342, y: 0.85897636}
+  m_Size: {x: 0.39588284, y: 0.85897636}
   m_Direction: 0
 --- !u!212 &1011162609
 SpriteRenderer:
@@ -520,6 +520,7 @@ MonoBehaviour:
   groundCheckRadius: 0.11
   jumpForce: 18
   wallCheckDistance: 0.24
+  amountOfJumps: 2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
@@ -1227,7 +1228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1622323227}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
