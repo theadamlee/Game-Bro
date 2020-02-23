@@ -523,9 +523,13 @@ MonoBehaviour:
   wallCheckDistance: 0.24
   wallSlideSpeed: 2
   movementForceInAir: 30
-  airDragMultiplier: 30
+  airDragMultiplier: 0.95
   variableJumpHeightMultiplier: 0.1
+  wallHopForce: 1
+  wallJumpForce: 1
   amountOfJumps: 2
+  wallHopDirection: {x: 1, y: 0.5}
+  wallJumpDirection: {x: 1, y: 2}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
