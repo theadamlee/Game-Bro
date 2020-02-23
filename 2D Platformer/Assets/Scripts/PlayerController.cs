@@ -177,6 +177,8 @@ public class PlayerController : MonoBehaviour
     private void UpdateAnimations()
     {
         anim.SetBool("isWalking", isWalking);
+
+        anim.SetFloat("SpeedY",rb.velocity.y);
     }
 
     private void CheckMovementDirection()
