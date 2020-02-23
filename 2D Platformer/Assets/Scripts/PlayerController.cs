@@ -179,6 +179,8 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("isWalking", isWalking);
 
         anim.SetFloat("SpeedY",rb.velocity.y);
+
+        anim.SetBool("isGrounded", isGrounded); 
     }
 
     private void CheckMovementDirection()
