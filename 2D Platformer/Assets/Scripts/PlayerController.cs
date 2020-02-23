@@ -5,31 +5,25 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-
-    private float movementInputDirection;
-
     private Rigidbody2D rb;
-
+    public Transform groundCheck;
+    public Transform wallCheck;
     private Animator anim;
 
+    private float movementInputDirection;
     public float moveSpeed;
-
+    public float groundCheckRadius;
     public float jumpForce;
-
-    public Transform groundCheck;
+    public float wallCheckDistance;
 
     private bool isGrounded;
-
-    public float groundCheckRadius;
+    private bool canJump;
+    private bool isWalking;
+    private bool isFacingRight = true;
+    private bool isTouchingWall;
 
     public LayerMask whatIsGround;
-
-    private bool canJump;
-
-    private bool isWalking;
-
-    private bool isFacingRight = true;
-      
+  
 
     void Start()
     {
@@ -80,8 +74,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
-       
-        
+             
     }
 
     private void applyMovement()
@@ -93,7 +86,7 @@ public class PlayerController : MonoBehaviour
     {
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
-
+        isTouchingWall = Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDistance, whatIsGround);
     }
 
     private void UpdateAnimations()
@@ -131,6 +124,7 @@ public class PlayerController : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y, wallCheck.position.z));
     }
 
 }
