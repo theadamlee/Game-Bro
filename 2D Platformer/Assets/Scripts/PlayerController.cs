@@ -112,7 +112,7 @@ public class PlayerController : MonoBehaviour
             Flip();
         }
 
-        if (rb.velocity.x != 0 && isGrounded)
+        if (rb.velocity.x < -0.1 || rb.velocity.x > 0.1)
         {
             isWalking = true;
         }
