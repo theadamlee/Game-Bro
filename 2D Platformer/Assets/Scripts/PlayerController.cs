@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
     private bool isWallSliding;
     private bool isTouchingWall;
     private bool isPushing;
+    private bool isCrouching;
+    private bool isRolling;
 
     public Vector2 wallHopDirection;
 
@@ -50,6 +52,8 @@ public class PlayerController : MonoBehaviour
         CheckMovementDirection();
         CheckIfWallSliding();
         CheckIfPushing();
+        CheckIfCrouching();
+        CheckIfRolling();
     }
 
     private void FixedUpdate()
@@ -73,6 +77,33 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    private void CheckIfCrouching()
+    {
+
+        if (Input.GetKey("s"))
+        {
+            isCrouching = true;
+        }
+        else
+        {
+            isCrouching = false;
+        }
+
+    }
+
+    private void CheckIfRolling()
+    {
+
+        if (isCrouching && isWalking)
+        {
+            isRolling = true;
+        }
+        else
+        {
+            isRolling = false;
+        }
+
+    }
 
     private void CheckIfPushing()
     {
@@ -161,6 +192,10 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("isPushing", isPushing);
 
         anim.SetBool("isTouchingWall", isTouchingWall);
+
+        anim.SetBool("isCrouching", isCrouching);
+
+        anim.SetBool("isRolling", isRolling);
     }
 
 

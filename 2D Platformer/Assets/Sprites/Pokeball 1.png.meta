@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: d88bd2a3fe87c7946917afdbd7ca7a8b
+guid: d7d1e9f06277ed145b2b928c5afff7f2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3842648443107669851
-    second: jumpingsheet_0
-  - first:
-      213: -2449495926725243139
-    second: jumpingsheet_1
-  - first:
-      213: 275627321151660616
-    second: jumpingsheet_2
+      213: -5832484687553672314
+    second: Pokeball 1_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -95,64 +89,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jumpingsheet_0
+      name: Pokeball 1_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 0
         y: 0
-        width: 17
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a80cd7a99b2caac0800000000000000
-      internalID: -3842648443107669851
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jumpingsheet_1
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 2
-        width: 22
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfe86c0ce64a10ed0800000000000000
-      internalID: -2449495926725243139
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jumpingsheet_2
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 3
-        width: 17
-        height: 22
-      alignment: 9
-      pivot: {x: 0.5, y: 0.7}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84223a7969933d300800000000000000
-      internalID: 275627321151660616
+      spriteID: 68b4578141ade0fa0800000000000000
+      internalID: -5832484687553672314
       vertices: []
       indices: 
       edges: []
