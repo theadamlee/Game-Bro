@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: d81aa66d1fee39f4b8707634c264d968
+guid: 6e0743e253f24994eb348dfdb4e91d6c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5832515904206229097
-    second: UGLYpushing_0
+      213: 6938117005511680125
+    second: UGLY2pushing_0
   - first:
-      213: 9144139651512525894
-    second: UGLYpushing_1
+      213: 2054585415284100163
+    second: UGLY2pushing_1
   - first:
-      213: 4679916849892331553
-    second: UGLYpushing_2
+      213: -7724389234214451822
+    second: UGLY2pushing_2
   - first:
-      213: -3080532857668991693
-    second: UGLYpushing_3
+      213: -8429050832725759388
+    second: UGLY2pushing_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -98,85 +98,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UGLYpushing_0
+      name: UGLY2pushing_0
       rect:
         serializedVersion: 2
         x: 8
-        y: 3
+        y: 0
         width: 16
         height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96e4709105241f050800000000000000
-      internalID: 5832515904206229097
+      spriteID: d70ee9328a4294060800000000000000
+      internalID: 6938117005511680125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UGLYpushing_1
+      name: UGLY2pushing_1
       rect:
         serializedVersion: 2
         x: 42
-        y: 3
+        y: 0
         width: 14
         height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 644e7f8b09286ee70800000000000000
-      internalID: 9144139651512525894
+      spriteID: 34c05beac8a538c10800000000000000
+      internalID: 2054585415284100163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UGLYpushing_2
+      name: UGLY2pushing_2
       rect:
         serializedVersion: 2
         x: 72
-        y: 3
+        y: 0
         width: 16
         height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1209238649762f040800000000000000
-      internalID: 4679916849892331553
+      spriteID: 295cbc3cae47dc490800000000000000
+      internalID: -7724389234214451822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UGLYpushing_3
+      name: UGLY2pushing_3
       rect:
         serializedVersion: 2
         x: 106
-        y: 3
+        y: 0
         width: 14
         height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33588b3ffafbf35d0800000000000000
-      internalID: -3080532857668991693
+      spriteID: 46aaba93deef50b80800000000000000
+      internalID: -8429050832725759388
       vertices: []
       indices: 
       edges: []

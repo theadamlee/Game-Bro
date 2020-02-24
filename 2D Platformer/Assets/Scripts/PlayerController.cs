@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour
         CheckIfCanJump();
         CheckMovementDirection();
         CheckIfWallSliding();
+        CheckIfPushing();
     }
 
     private void FixedUpdate()
@@ -76,9 +77,13 @@ public class PlayerController : MonoBehaviour
     private void CheckIfPushing()
     {
 
-        if (isTouchingWall && movementInputDirection != 0)
+        if (isTouchingWall && rb.velocity.x < -0.1 && isGrounded || isTouchingWall && rb.velocity.x > 0.1 && isGrounded)
         {
             isPushing = true;
+        }
+        else
+        {
+            isPushing = false;
         }
 
 
@@ -154,6 +159,8 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("isWallSliding", isWallSliding);
 
         anim.SetBool("isPushing", isPushing);
+
+        anim.SetBool("isTouchingWall", isTouchingWall);
     }
 
 
@@ -169,7 +176,7 @@ public class PlayerController : MonoBehaviour
             Flip();
         }
 
-        if (rb.velocity.x < -0.1 && isGrounded || rb.velocity.x > 0.1 && isGrounded)
+        if (rb.velocity.x < -0.1 && isGrounded && !isPushing || rb.velocity.x > 0.1 && isGrounded && !isPushing)
         {
             isWalking = true;
         }
