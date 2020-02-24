@@ -124,7 +124,7 @@ public class PlayerController : MonoBehaviour
             Vector2 forceToAdd = new Vector2 (wallHopForce * wallHopDirection.x * -facingDirection, wallHopForce * wallHopDirection.y);
             rb.AddForce(forceToAdd, ForceMode2D.Impulse);
         }
-        else if((isWalking || isTouchingWall) && movementInputDirection != 0)
+        else if((isWalking || isTouchingWall) && movementInputDirection != 0 && canJump)
         {
             isWallSliding = false;
             amountOfJumpsLeft--;
