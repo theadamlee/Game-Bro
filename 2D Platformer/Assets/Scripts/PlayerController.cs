@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public float wallCheckDistance;
     public float wallSlideSpeed;
+    public float wallHopForce;
 
     public int amountOfJumps;
     private int amountOfJumpsLeft;
@@ -28,6 +29,8 @@ public class PlayerController : MonoBehaviour
     private bool isWallSliding;
     private bool isTouchingWall;
     private bool isPushing;
+
+    public Vector2 wallHopDirection;
 
     public LayerMask whatIsGround;
 
@@ -110,7 +113,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        if(canJump)
+        if (canJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             amountOfJumpsLeft--;
@@ -120,9 +123,7 @@ public class PlayerController : MonoBehaviour
 
     private void applyMovement()
     {
-
-      
-       
+        
         rb.velocity = new Vector2(moveSpeed * movementInputDirection, rb.velocity.y);
         
               

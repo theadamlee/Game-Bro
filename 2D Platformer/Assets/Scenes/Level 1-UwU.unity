@@ -522,7 +522,9 @@ MonoBehaviour:
   jumpForce: 30
   wallCheckDistance: 0.24
   wallSlideSpeed: 3
+  wallHopForce: 40
   amountOfJumps: 2
+  wallHopDirection: {x: 0, y: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
