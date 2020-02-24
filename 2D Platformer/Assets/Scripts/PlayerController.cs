@@ -180,7 +180,9 @@ public class PlayerController : MonoBehaviour
 
         anim.SetFloat("SpeedY",rb.velocity.y);
 
-        anim.SetBool("isGrounded", isGrounded); 
+        anim.SetBool("isGrounded", isGrounded);
+
+        anim.SetBool("isWallSliding", isWallSliding);
     }
 
     private void CheckMovementDirection()
