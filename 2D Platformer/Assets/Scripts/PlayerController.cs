@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     private bool isFacingRight = true;
     private bool isWallSliding;
     private bool isTouchingWall;
+    private bool isPushing;
 
     public LayerMask whatIsGround;
 
@@ -67,6 +68,19 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
+
+    private void CheckIfPushing()
+    {
+
+        if (isTouchingWall && movementInputDirection != 0)
+        {
+            isPushing = true;
+        }
+
+
+    }
+
 
     private void checkInput()
     {
@@ -132,12 +146,16 @@ public class PlayerController : MonoBehaviour
     {
         anim.SetBool("isWalking", isWalking);
 
-        anim.SetFloat("SpeedY",rb.velocity.y);
+        anim.SetFloat("SpeedY", rb.velocity.y);
 
         anim.SetBool("isGrounded", isGrounded);
 
         anim.SetBool("isWallSliding", isWallSliding);
+
+        anim.SetBool("isPushing", isPushing);
     }
+
+
 
     private void CheckMovementDirection()
     {
