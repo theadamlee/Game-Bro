@@ -124,11 +124,11 @@ public class PlayerController : MonoBehaviour
             Vector2 forceToAdd = new Vector2 (wallHopForce * wallHopDirection.x * -facingDirection, wallHopForce * wallHopDirection.y);
             rb.AddForce(forceToAdd, ForceMode2D.Impulse);
         }
-        else if((isWalking || isTouchingWall) && movementInputDirection != 0 && canJump)
+        else if((isWalking || isTouchingWall) && movementInputDirection != 0)
         {
             isWallSliding = false;
             amountOfJumpsLeft--;
-            Vector2 forceToAdd = new Vector2(wallHopForce * wallJumpDirection.x * movementInputDirection, wallJumpForce * wallJumpDirection.y);
+            Vector2 forceToAdd = new Vector2(wallJumpForce * wallJumpDirection.x * movementInputDirection, wallJumpForce * wallJumpDirection.y);
             rb.AddForce(forceToAdd, ForceMode2D.Impulse);
         }
              
