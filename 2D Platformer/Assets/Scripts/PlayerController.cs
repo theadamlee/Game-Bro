@@ -84,7 +84,6 @@ public class PlayerController : MonoBehaviour
         {
             amountOfJumpsLeft = amountOfJumps;
         }
-        
         if(amountOfJumpsLeft <= 0)
         {
             canJump = false;
