@@ -522,14 +522,7 @@ MonoBehaviour:
   jumpForce: 30
   wallCheckDistance: 0.24
   wallSlideSpeed: 3
-  movementForceInAir: 45
-  airDragMultiplier: 1
-  variableJumpHeightMultiplier: 0.6
-  wallHopForce: 15
-  wallJumpForce: 35
   amountOfJumps: 2
-  wallHopDirection: {x: 1, y: 0.5}
-  wallJumpDirection: {x: 1, y: 2}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
@@ -14262,7 +14255,7 @@ GameObject:
   - component: {fileID: 1507654792}
   - component: {fileID: 1507654794}
   - component: {fileID: 1507654791}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chest1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
