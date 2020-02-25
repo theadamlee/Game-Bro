@@ -1409,7 +1409,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 5
   m_AngularDrag: 4
-  m_GravityScale: 8.5
+  m_GravityScale: 10.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -29844,14 +29844,6 @@ CompositeCollider2D:
         Y: 180000000
       - X: 420000000
         Y: 180000000
-    - - X: 220000000
-        Y: -10000000
-      - X: 210000000
-        Y: -10000000
-      - X: 210000000
-        Y: -20000000
-      - X: 220000000
-        Y: -20000000
     - - X: 50000000
         Y: -10000000
       - X: 40000000
@@ -29859,6 +29851,14 @@ CompositeCollider2D:
       - X: 40000000
         Y: -20000000
       - X: 50000000
+        Y: -20000000
+    - - X: 220000000
+        Y: -10000000
+      - X: 210000000
+        Y: -10000000
+      - X: 210000000
+        Y: -20000000
+      - X: 220000000
         Y: -20000000
   m_CompositePaths:
     m_Paths:
